@@ -14,6 +14,7 @@ cd Folder Name [ To move from one Dir to other Dir ]
 mkdir DIR-NAME [To create the dir ]
 
 ls or dir [To get the list of files present in the dir ]
+ls  -a [ to get the hidden files ]
 
 		STAGING
 		   |
@@ -58,5 +59,21 @@ git push origin main [To push the file from local repo to master repo ]
 
 git clone ADDRESS [ To clone from the Address ]
 
-echo  "text ">> Readme.md
-cat Readme.md
+echo  "text ">> Readme.md [ to enter/write the content into the file ]
+cat Readme.md [to read the content from the file ]
+
+git branch  -M main [to create the branch ]
+
+ssh-keygen -o [To create the ssn key ]
+
+git remote add origin ssh/https url of the prject [to add the remote repo ]  EX :-[SSH :=>git@github.com:Sharanvthu/Dummi.git ]
+
+git push -u origin main [to push file from local repo to branch repo ]
+
+git tag [which will give all the tag ]
+
+git tag -a TAGNAME -m "MSG" [to add the tag]
+
+git show TAGNAME [ to display the entire description about the tag ]
+
+
