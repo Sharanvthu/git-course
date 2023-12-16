@@ -1,0 +1,62 @@
+Git
+version control
+version control system
+centralized vcs
+Distributed vcs
+===========================================commands for git in powershell============================================
+
+cd D: [To switch b/w the Dir ]
+
+cd.. [To move to previous Dir]
+
+cd Folder Name [ To move from one Dir to other Dir ]
+
+mkdir DIR-NAME [To create the dir ]
+
+ls or dir [To get the list of files present in the dir ]
+
+		STAGING
+		   |
+		   |
+	     COMMIT WITH MSG
+		   |
+		   |
+		  PUSH
+		   |
+		   |
+		 MERGE 
+
+git --version [ To check the version of the git ]
+
+git config --global --list [To check the configuration ]
+
+git config --global --user.name "NAME OF THE USER" [To set the name  of the User ]
+
+git config --global --user.email "EMAIL OF USER" [To set the user email ]
+
+git status [To check the status of the opertation ]
+
+git init -b main [ to create the local repo ]
+
+git add FILE NAME [working dir to staging area ]
+
+git commit -m "message " [commit the file from staging area to local repo ]
+
+git commit -a -m "message " [  commit directly without staging the file ]
+
+git log [To check the log b/w the local repo ,working dir ,git ]
+
+git diff [track the changes from file ]
+
+git diff --staged [ track the changes while in staging area ]
+
+git add . [ add all files which is present in the folder to staging area ]
+
+git rm --cached FILENAME [to remove from the local repo after staging or commit ]
+
+git push origin main [To push the file from local repo to master repo ]
+
+git clone ADDRESS [ To clone from the Address ]
+
+echo  "text ">> Readme.md
+cat Readme.md
