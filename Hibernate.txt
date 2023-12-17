@@ -1,0 +1,45 @@
+persistance:store the data is called persistance
+
+ORM tools:Hibernate ,ibatis,toplink(tomcat)
+
+
+
+
+
+===================================================Hibernate programing=================================
+
+
+How to configure and persist the data into database
+///////////////////////////////////////////////////////////////////////
+
+Configuration con= new Configuration().configure().addAnnotatedClass(Employee.class);
+			ServiceRegistry reg=new ServiceRegistryBuilder().applySettings(con.getProperties()).buildServiceRegistry();
+			SessionFactory sf=con.buildSessionFactory(reg);
+			Session session=sf.openSession();
+			Transaction tx=session.beginTransaction();
+
+			session.save(emp); 
+
+			tx.commit();
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+How to Fetch the data from database
+///////////////////////////////////////////////////////////////////////
+
+	Configuration con= new Configuration().configure().addAnnotatedClass(Employee.class);
+			ServiceRegistry reg=new ServiceRegistryBuilder().applySettings(con.getProperties()).buildServiceRegistry();
+			SessionFactory sf=con.buildSessionFactory(reg);
+			Session session=sf.openSession();
+			Transaction tx=session.beginTransaction();
+
+		//object reference=(Type cast)session.get(Class Name/Entity Name.class, Serializable id);
+			emp=(Employee) session.get(Employee.class, 101);
+			tx.commit();
+			System.out.println(emp);
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+
+ 
