@@ -55,14 +55,14 @@ git add . [ add all files which is present in the folder to staging area ]
 
 git rm --cached FILENAME [to remove from the local repo after staging or commit ]
 
-git push origin main [To push the file from local repo to master repo ]
+git push origin main [To push the file from local repo to remote repo ]
 
 git clone ADDRESS [ To clone from the Address ]
 
 echo  "text ">> Readme.md [ to enter/write the content into the file ]
 cat Readme.md [to read the content from the file ]
 
-git branch  -M main [to create the branch ]
+git branch  -M main [to create the branch main]
 
 ssh-keygen -o [To create the ssn key ]
 
@@ -75,5 +75,29 @@ git tag [which will give all the tag ]
 git tag -a TAGNAME -m "MSG" [to add the tag]
 
 git show TAGNAME [ to display the entire description about the tag ]
+
+git  checkout -b BRANCHNAME [ this command will create and switch the branch ]
+
+git  switc -c BRANCHNAME [ this command will create and switch the branch ]
+
+
+git branch [ To know the braches in prject ]
+
+git branch  -M BRANCHNAME [to create the branch with BRANCH NAME]
+
+git branch --all [ To know the braches in prject  and also remote branch]
+
+git branch -d BRANCHNAME [to delete the branch ] 	
+
+git push origin BRANCHNAME [to push the branch ]
+
+git pull origin main [ to send pull request to the main]
+
+git merge BRANCHNAME [verify before merge that you were present in main and enter the branch name to the main ] 
+
+git branch -[it will switch to the previous branch ]
+
+git switch BRANCHNAME [it will switch to the mentioned branch name ]
+
 
 
